@@ -1,6 +1,4 @@
-/**
- * Interop between "export default" and "module.exports".
- */ "use strict";
+"use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
