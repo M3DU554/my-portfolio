@@ -3,15 +3,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 0 && (module.exports = {
-    Span: null,
-    SpanStatus: null,
-    exportTraceState: null,
-    flushAllTraces: null,
-    getTraceEvents: null,
-    initializeTraceState: null,
-    recordTraceEvents: null,
-    setGlobal: null,
-    trace: null
+    getSortedRouteObjects: null,
+    getSortedRoutes: null,
+    isDynamicRoute: null
 });
 function _export(target, all) {
     for(var name in all)Object.defineProperty(target, name, {
@@ -20,35 +14,17 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    Span: function() {
-        return _trace.Span;
+    getSortedRouteObjects: function() {
+        return _sortedroutes.getSortedRouteObjects;
     },
-    SpanStatus: function() {
-        return _trace.SpanStatus;
+    getSortedRoutes: function() {
+        return _sortedroutes.getSortedRoutes;
     },
-    exportTraceState: function() {
-        return _trace.exportTraceState;
-    },
-    flushAllTraces: function() {
-        return _trace.flushAllTraces;
-    },
-    getTraceEvents: function() {
-        return _trace.getTraceEvents;
-    },
-    initializeTraceState: function() {
-        return _trace.initializeTraceState;
-    },
-    recordTraceEvents: function() {
-        return _trace.recordTraceEvents;
-    },
-    setGlobal: function() {
-        return _shared.setGlobal;
-    },
-    trace: function() {
-        return _trace.trace;
+    isDynamicRoute: function() {
+        return _isdynamic.isDynamicRoute;
     }
 });
-const _trace = require("./trace");
-const _shared = require("./shared");
+const _sortedroutes = require("./sorted-routes");
+const _isdynamic = require("./is-dynamic");
 
 //# sourceMappingURL=index.js.map
