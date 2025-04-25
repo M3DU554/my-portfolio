@@ -1,16 +1,4 @@
-export type SpanId = number;
-export interface TraceState {
-    lastId: number;
-    defaultParentSpanId?: SpanId;
-    shouldSaveTraceEvents?: boolean;
-}
-export type TraceEvent = {
-    traceId?: string;
-    parentId?: SpanId;
-    name: string;
-    id: SpanId;
-    timestamp: number;
-    duration: number;
-    tags?: Object;
-    startTime?: number;
-};
+import type { IncomingMessage, ServerResponse } from 'http';
+import type { Duplex } from 'stream';
+export type WorkerRequestHandler = (req: IncomingMessage, res: ServerResponse) => Promise<any>;
+export type WorkerUpgradeHandler = (req: IncomingMessage, socket: Duplex, head: Buffer) => any;
